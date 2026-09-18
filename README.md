@@ -1,5 +1,5 @@
-# Jaume Tur #
- - Repositorio portfolio en GitHub aqui: / https://jautur.github.io/portfolio/
+# Arnau Domenech #
+ - Repositorio portfolio en GitHub aqui: / https://github.com/ArnauDAW/portfolio
 
  ## Arquitectura de Despliegue: Disparador y Ejecutor
  [Origen] ──(Detecta)──> [Disparador] ──(Payload JSON)──> [Ejecutor] ──(Acción)──> [Destino]
