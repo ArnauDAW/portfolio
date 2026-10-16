@@ -1,5 +1,6 @@
-# Arnau Domenech #
- - Repositorio portfolio en GitHub aqui: / https://github.com/ArnauDAW/portfolio
+# Arnau Domenech Blanquer #
+ - Repositorio portfolio en GitHub: https://github.com/ArnauDAW/portfolio
+ - Web desplegada en GitHub Pages: https://arnaudaw.github.io/portfolio/
 
  ## Arquitectura de Despliegue: Disparador y Ejecutor
  [Origen] ──(Detecta)──> [Disparador] ──(Payload JSON)──> [Ejecutor] ──(Acción)──> [Destino]
