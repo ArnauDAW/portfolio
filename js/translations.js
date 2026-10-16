@@ -1,0 +1,682 @@
+/**
+ * Dictionary of translations for Arnau Domenech Blanquer's Portfolio
+ * Languages: Spanish (es), English (en), and Valencian (va)
+ */
+const translations = {
+  es: {
+    // Document metadata
+    meta: {
+      title: "Arnau Domenech Blanquer — Desarrollador Web · Frontend · CI/CD",
+      description: "Portfolio profesional de Arnau Domenech Blanquer. Desarrollo web moderno, arquitecturas reactivas, optimización de rendimiento y automatización de despliegues."
+    },
+
+    // Navigation
+    nav: {
+      home: "Inicio",
+      about: "Sobre mí",
+      projects: "Proyectos",
+      skills: "Habilidades",
+      process: "Metodología",
+      contact: "Contacto",
+      themeLight: "Modo Día",
+      themeDark: "Modo Noche",
+      menuOpen: "Abrir menú de navegación",
+      menuClose: "Cerrar menú",
+      availableStatus: "Disponible para proyectos"
+    },
+
+    // Hero Section
+    hero: {
+      greeting: "Hola, soy Arnau Domenech",
+      role: "Desarrollador Web · Automatización · CI/CD",
+      headlinePrefix: "Construyo experiencias web ",
+      headlineHighlight: "rápidas, robustas",
+      headlineSuffix: " y orientadas al rendimiento.",
+      description: "Especializado en ingeniería frontend, interfaces reactivas y sistemas de integración continua. Combino código limpio con arquitecturas escalables que resuelven problemas reales.",
+      ctaProjects: "Ver proyectos",
+      ctaContact: "Contactar",
+      ctaLinkedIn: "LinkedIn",
+      metrics: {
+        yearsLabel: "Años de experiencia",
+        automationLabel: "Automatizaciones activas",
+        perfLabel: "Rendimiento Lighthouse",
+        uptimeLabel: "Disponibilidad de servicios"
+      }
+    },
+
+    // About Section
+    about: {
+      tag: "Sobre mí",
+      title: "Transformando ideas complejas en interfaces limpias y arquitecturas predecibles.",
+      lead: "Soy desarrollador web enfocado en la intersección entre diseño de interacción, arquitectura frontend y automatización de procesos.",
+      p1: "Mi enfoque de trabajo se basa en principios de ingeniería de software sólidos: código modular, tipado estricto, accesibilidad (WCAG) y optimización de carga sin dependencias superfluas.",
+      p2: "Me apasiona crear productos digitales donde cada interacción sea fluida y cada flujo de despliegue esté protegido por pruebas continuas y validaciones rigurosas.",
+      architectureTitle: "Arquitectura de Despliegue: Disparador & Ejecutor",
+      architectureDesc: "Implemento flujos de trabajo basados en eventos reactivos donde disparadores (webhooks, git push, cron) envían payloads a servicios ejecutores idempotentes que garantizan entregas seguras y sin fallos.",
+      pillars: {
+        cleanCodeTitle: "Código Limpio & Semántico",
+        cleanCodeDesc: "Estructuras HTML5 nativas, CSS moderno sin bloat y JavaScript/TypeScript estructurado.",
+        perfTitle: "Alto Rendimiento",
+        perfDesc: "Cargas instantáneas, minimización de layouts forzados y gráficos WebGL ligeros.",
+        automationTitle: "Integración Continua (CI/CD)",
+        automationDesc: "Pipelines automatizados de pruebas, linters y despliegues automáticos.",
+        uxTitle: "Enfoque en Accesibilidad (a11y)",
+        uxDesc: "Navegación por teclado completa, contrastes verificados y semántica inclusiva."
+      }
+    },
+
+    // Projects Section
+    projects: {
+      tag: "Proyectos",
+      title: "Soluciones reales en producción",
+      subtitle: "Una selección de proyectos destacados donde diseño, código y automatización trabajan juntos.",
+      filters: {
+        all: "Todos",
+        webapps: "Web Apps",
+        automation: "Sistemas & CI/CD",
+        graphics: "3D & Interfaces"
+      },
+      viewLive: "Ver demo en vivo",
+      viewCode: "Ver código en GitHub",
+      roleLabel: "Rol:",
+      impactLabel: "Resultado:",
+      items: [
+        {
+          id: "portfolio",
+          category: "webapps",
+          badge: "Web App en Vivo",
+          year: "2026",
+          title: "Portfolio Profesional & Pipeline CI/CD",
+          description: "Sitio web profesional con arquitectura frontend moderna, automatización CI/CD con GitHub Actions, validación de calidad y diseño interactivo accesible.",
+          role: "Desarrollo Frontend, Arquitectura CI/CD y Calidad",
+          impact: "100% en accesibilidad y SEO, 4 checks de validación continua y despliegue automático en GitHub Pages.",
+          tags: ["HTML5", "CSS3", "JavaScript", "GitHub Actions", "Lighthouse"],
+          liveUrl: "https://arnaudaw.github.io/portfolio/",
+          githubUrl: "https://github.com/ArnauDAW/portfolio"
+        },
+        {
+          id: "telemetry",
+          category: "graphics",
+          badge: "Data Visualization",
+          year: "2024",
+          title: "Panel de Métricas & Telemetría 3D",
+          description: "Sistema visual de monitoreo en tiempo real con renderizado acelerado por hardware mediante WebGL/Three.js. Diseñado específicamente para ejecutarse de manera fluida incluso en dispositivos de recursos limitados.",
+          role: "Ingeniería Gráfica y Frontend",
+          impact: "60 FPS estables con bajo consumo de memoria y pausado dinámico de renderizado.",
+          tags: ["Three.js", "WebGL", "JavaScript ES6+", "Performance", "CSS Grid"],
+          liveUrl: "#",
+          githubUrl: "https://github.com/ArnauDAW/portfolio"
+        },
+        {
+          id: "pipeline",
+          category: "automation",
+          badge: "DevOps & CI/CD",
+          year: "2026",
+          title: "Pipeline CI/CD: Disparador & Ejecutor",
+          description: "Arquitectura orientada a eventos para integración y despliegue continuo. Un sistema de disparo por webhooks que procesa payloads JSON y ejecuta compilaciones, pruebas automatizadas y despliegues idempotentes.",
+          role: "Arquitectura de Automatización y CI/CD",
+          impact: "Validación automática de calidad (HTML/CSS/JS) y entrega continua sin interrupciones.",
+          tags: ["GitHub Actions", "CI/CD", "Webhooks", "JSON Payloads", "Linux"],
+          liveUrl: "#proceso",
+          githubUrl: "https://github.com/ArnauDAW/portfolio"
+        }
+      ]
+    },
+
+    // Skills Section
+    skills: {
+      tag: "Habilidades",
+      title: "Stack técnico y competencias",
+      subtitle: "Herramientas y tecnologías que utilizo para construir soluciones duraderas y de alta calidad.",
+      categories: [
+        {
+          name: "Frontend & UI Engineering",
+          desc: "Desarrollo de interfaces reactivas, modernas y de alto rendimiento.",
+          skills: ["HTML5 Semántico", "CSS3 / Flexbox / Grid", "JavaScript (ES6+)", "TypeScript", "Angular", "Three.js / WebGL", "Responsive Web Design"]
+        },
+        {
+          name: "Arquitectura & Backend",
+          desc: "Estructuración de datos, lógica de negocio y comunicación de servicios.",
+          skills: ["Node.js", "RESTful APIs", "JSON Payloads", "Arquitectura Trigger/Executor", "Microservicios", "Clean Architecture"]
+        },
+        {
+          name: "Herramientas, Git & CI/CD",
+          desc: "Automatización de despliegues, control de versiones y entornos de desarrollo.",
+          skills: ["Git & GitHub", "GitHub Actions", "Pipelines CI/CD", "Webhooks de automatización", "Linux Shell / Bash", "npm / Node tooling"]
+        },
+        {
+          name: "Calidad, SEO & Rendimiento",
+          desc: "Garantía de estándares, accesibilidad y máxima velocidad de carga.",
+          skills: ["Web Performance (Core Web Vitals)", "Accesibilidad WCAG AA", "SEO Técnico & Metadatos", "html-validate / Linters", "Cross-browser Testing"]
+        }
+      ]
+    },
+
+    // Process Section
+    process: {
+      tag: "Metodología",
+      title: "Un proceso estructurado orientado a resultados",
+      subtitle: "Cada etapa está diseñada para minimizar la fricción técnica y maximizar el valor del producto.",
+      steps: [
+        {
+          number: "01",
+          title: "Diagnóstico & Requisitos",
+          desc: "Análisis del problema, definición del alcance técnico, selección del stack óptimo y establecimiento de objetivos de rendimiento y accesibilidad."
+        },
+        {
+          number: "02",
+          title: "Diseño & Arquitectura",
+          desc: "Creación de la estructura visual, flujos de usuario, diseño de contratos de datos (JSON) y definición de la arquitectura de componentes."
+        },
+        {
+          number: "03",
+          title: "Desarrollo & Pruebas",
+          desc: "Implementación con código limpio y tipado, pruebas unitarias y de validación automática en cada confirmación de código."
+        },
+        {
+          number: "04",
+          title: "CI/CD & Optimización",
+          desc: "Despliegue automático mediante pipelines continuos, auditorías de Lighthouse, verificación de accesibilidad y monitorización activa."
+        }
+      ]
+    },
+
+    // Metrics / Insights
+    insights: {
+      title: "Rendimiento y fiabilidad medibles",
+      stat1Number: "98%",
+      stat1Label: "Índice de calidad y satisfacción",
+      stat2Number: "100%",
+      stat2Label: "Validación de código en CI",
+      stat3Number: "< 1s",
+      stat3Label: "Tiempo de carga inicial",
+      stat4Number: "24/7",
+      stat4Label: "Disponibilidad en GitHub Pages"
+    },
+
+    // Contact Section
+    contact: {
+      tag: "Contacto",
+      title: "¿Tienes un proyecto en mente?",
+      subtitle: "Estoy disponible para colaborar en proyectos desafiantes, arquitecturas web y desarrollo frontend.",
+      emailLabel: "Correo electrónico:",
+      emailCopy: "Copiar email",
+      emailCopied: "¡Copiado al portapapeles!",
+      githubLabel: "Perfil de GitHub:",
+      githubView: "Visitar github.com/ArnauDAW",
+      linkedinLabel: "Perfil de LinkedIn:",
+      linkedinView: "Visitar linkedin.com/in/arnau-domenech",
+      formTitle: "Envíame un mensaje",
+      nameLabel: "Tu nombre",
+      namePlaceholder: "Ej: Ana García",
+      emailInputLabel: "Tu correo electrónico",
+      emailPlaceholder: "nombre@ejemplo.com",
+      messageLabel: "Mensaje",
+      messagePlaceholder: "Cuéntame los detalles de tu proyecto o idea...",
+      submitBtn: "Enviar mensaje",
+      submittingBtn: "Enviando...",
+      successMsg: "¡Gracias! Tu cliente de correo se abrirá para completar el envío.",
+      validationError: "Por favor, completa todos los campos requeridos con datos válidos."
+    },
+
+    // Footer
+    footer: {
+      copyright: "© 2026 Arnau Domenech Blanquer. Todos los derechos reservados.",
+      builtWith: "Construido con HTML5 semántico, CSS3 moderno, Vanilla JS & Three.js",
+      backToTop: "Volver arriba"
+    }
+  },
+
+  en: {
+    // Document metadata
+    meta: {
+      title: "Arnau Domenech Blanquer — Web Developer · Frontend · CI/CD",
+      description: "Professional portfolio of Arnau Domenech Blanquer. Modern web development, reactive architectures, performance optimization, and CI/CD automation."
+    },
+
+    // Navigation
+    nav: {
+      home: "Home",
+      about: "About",
+      projects: "Projects",
+      skills: "Skills",
+      process: "Process",
+      contact: "Contact",
+      themeLight: "Light Mode",
+      themeDark: "Dark Mode",
+      menuOpen: "Open navigation menu",
+      menuClose: "Close menu",
+      availableStatus: "Available for projects"
+    },
+
+    // Hero Section
+    hero: {
+      greeting: "Hello, I am Arnau Domenech",
+      role: "Web Developer · Automation · CI/CD",
+      headlinePrefix: "I build web experiences that are ",
+      headlineHighlight: "fast, resilient",
+      headlineSuffix: " and performance-driven.",
+      description: "Specialized in frontend engineering, reactive interfaces, and continuous integration systems. Combining clean code with scalable architectures to solve real problems.",
+      ctaProjects: "View Projects",
+      ctaContact: "Get in Touch",
+      ctaLinkedIn: "LinkedIn",
+      metrics: {
+        yearsLabel: "Years of Experience",
+        automationLabel: "Active Automations",
+        perfLabel: "Lighthouse Performance",
+        uptimeLabel: "Service Availability"
+      }
+    },
+
+    // About Section
+    about: {
+      tag: "About Me",
+      title: "Turning complex ideas into clear interfaces and predictable architectures.",
+      lead: "I am a web developer focused on the intersection of interaction design, frontend architecture, and process automation.",
+      p1: "My approach is grounded in sound software engineering principles: modular code, strict typing, WCAG accessibility, and instant loading times without unnecessary bloat.",
+      p2: "I enjoy building digital products where every interaction is effortless and every deployment workflow is safeguarded by automated testing and rigorous validation.",
+      architectureTitle: "Deployment Architecture: Trigger & Executor",
+      architectureDesc: "I build event-driven workflows where triggers (webhooks, git push, cron) deliver structured JSON payloads to idempotent executors, guaranteeing safe and resilient deployments.",
+      pillars: {
+        cleanCodeTitle: "Clean & Semantic Code",
+        cleanCodeDesc: "Native HTML5 structures, lean modern CSS, and structured JavaScript/TypeScript.",
+        perfTitle: "High Performance",
+        perfDesc: "Instant loading, zero forced reflows, and lightweight WebGL rendering.",
+        automationTitle: "Continuous Integration (CI/CD)",
+        automationDesc: "Automated test suites, linters, and headless zero-downtime deployment pipelines.",
+        uxTitle: "Accessibility First (a11y)",
+        uxDesc: "Full keyboard navigation, verified color contrast, and inclusive semantics."
+      }
+    },
+
+    // Projects Section
+    projects: {
+      tag: "Projects",
+      title: "Real solutions running in production",
+      subtitle: "A curated selection of featured projects where design, clean code, and automation unite.",
+      filters: {
+        all: "All",
+        webapps: "Web Apps",
+        automation: "Systems & CI/CD",
+        graphics: "3D & Interfaces"
+      },
+      viewLive: "Live Demo",
+      viewCode: "GitHub Code",
+      roleLabel: "Role:",
+      impactLabel: "Result:",
+      items: [
+        {
+          id: "portfolio",
+          category: "webapps",
+          badge: "Live Web App",
+          year: "2026",
+          title: "Professional Portfolio & CI/CD Pipeline",
+          description: "Modern web portfolio engineered with responsive frontend architecture, continuous integration with GitHub Actions, quality budgets, and accessibility.",
+          role: "Frontend Development, CI/CD Architecture & Quality",
+          impact: "100% in accessibility and SEO, 4 continuous validation checks, and automatic GitHub Pages deployment.",
+          tags: ["HTML5", "CSS3", "JavaScript", "GitHub Actions", "Lighthouse"],
+          liveUrl: "https://arnaudaw.github.io/portfolio/",
+          githubUrl: "https://github.com/ArnauDAW/portfolio"
+        },
+        {
+          id: "telemetry",
+          category: "graphics",
+          badge: "Data Visualization",
+          year: "2024",
+          title: "3D Telemetry & Metrics Dashboard",
+          description: "Real-time hardware-accelerated monitoring dashboard built with WebGL and Three.js. Specially crafted to run silky smooth even on resource-constrained devices.",
+          role: "Graphics & Frontend Engineering",
+          impact: "Rock-solid 60 FPS with low memory footprint and automatic viewport sleep cycles.",
+          tags: ["Three.js", "WebGL", "JavaScript ES6+", "Performance", "CSS Grid"],
+          liveUrl: "#",
+          githubUrl: "https://github.com/ArnauDAW/portfolio"
+        },
+        {
+          id: "pipeline",
+          category: "automation",
+          badge: "DevOps & CI/CD",
+          year: "2026",
+          title: "CI/CD Pipeline: Trigger & Executor",
+          description: "Event-driven architecture for continuous integration and delivery. A webhook-based trigger system processing JSON payloads to run automated builds, lint tests, and idempotent deployments.",
+          role: "Automation Architecture & CI/CD",
+          impact: "Automated quality validation (HTML/CSS/JS) and uninterrupted delivery pipelines.",
+          tags: ["GitHub Actions", "CI/CD", "Webhooks", "JSON Payloads", "Linux"],
+          liveUrl: "#process",
+          githubUrl: "https://github.com/ArnauDAW/portfolio"
+        }
+      ]
+    },
+
+    // Skills Section
+    skills: {
+      tag: "Skills",
+      title: "Technical stack and core competencies",
+      subtitle: "The tools, languages, and methodologies I leverage to engineer enduring solutions.",
+      categories: [
+        {
+          name: "Frontend & UI Engineering",
+          desc: "Crafting modern, reactive, high-performance interfaces.",
+          skills: ["Semantic HTML5", "CSS3 / Flexbox / Grid", "JavaScript (ES6+)", "TypeScript", "Angular", "Three.js / WebGL", "Responsive Web Design"]
+        },
+        {
+          name: "Architecture & Backend",
+          desc: "Structuring data models, business logic, and resilient services.",
+          skills: ["Node.js", "RESTful APIs", "JSON Payloads", "Trigger/Executor Architecture", "Microservices", "Clean Architecture"]
+        },
+        {
+          name: "Tools, Git & CI/CD",
+          desc: "Automating deployments, version control, and development toolchains.",
+          skills: ["Git & GitHub", "GitHub Actions", "CI/CD Pipelines", "Webhook Automation", "Linux Shell / Bash", "npm / Node tooling"]
+        },
+        {
+          name: "Quality, SEO & Performance",
+          desc: "Guaranteeing high standards, accessibility, and fast load speeds.",
+          skills: ["Web Performance (Core Web Vitals)", "WCAG AA Accessibility", "Technical SEO & Metadata", "html-validate / Linters", "Cross-browser Testing"]
+        }
+      ]
+    },
+
+    // Process Section
+    process: {
+      tag: "Methodology",
+      title: "A structured process designed for impact",
+      subtitle: "Every phase is carefully calibrated to reduce technical friction and maximize software value.",
+      steps: [
+        {
+          number: "01",
+          title: "Discovery & Requirements",
+          desc: "Analyzing the problem domain, establishing technical scope, selecting optimal toolchains, and locking performance benchmarks."
+        },
+        {
+          number: "02",
+          title: "Design & Architecture",
+          desc: "Wireframing user flows, defining clean JSON data contracts, and mapping modular component boundaries."
+        },
+        {
+          number: "03",
+          title: "Development & Testing",
+          desc: "Writing typed, maintainable code with strict linting, automated unit testing, and immediate feedback loops."
+        },
+        {
+          number: "04",
+          title: "CI/CD & Optimization",
+          desc: "Automated deployments via headless pipelines, continuous Lighthouse benchmarking, and zero-downtime releases."
+        }
+      ]
+    },
+
+    // Metrics / Insights
+    insights: {
+      title: "Measurable performance and reliability",
+      stat1Number: "98%",
+      stat1Label: "Quality & Satisfaction Index",
+      stat2Number: "100%",
+      stat2Label: "CI Pipeline Validation Pass",
+      stat3Number: "< 1s",
+      stat3Label: "Initial Page Load Speed",
+      stat4Number: "24/7",
+      stat4Label: "High Availability on GitHub Pages"
+    },
+
+    // Contact Section
+    contact: {
+      tag: "Contact",
+      title: "Have a project in mind?",
+      subtitle: "I am open to discuss new opportunities, challenging web architectures, and frontend development.",
+      emailLabel: "Email address:",
+      emailCopy: "Copy email",
+      emailCopied: "Copied to clipboard!",
+      githubLabel: "GitHub profile:",
+      githubView: "Visit github.com/ArnauDAW",
+      linkedinLabel: "LinkedIn Profile:",
+      linkedinView: "Visit linkedin.com/in/arnau-domenech",
+      formTitle: "Send me a message",
+      nameLabel: "Your Name",
+      namePlaceholder: "e.g. John Doe",
+      emailInputLabel: "Your Email Address",
+      emailPlaceholder: "name@example.com",
+      messageLabel: "Message",
+      messagePlaceholder: "Share the details of your project or ideas...",
+      submitBtn: "Send Message",
+      submittingBtn: "Sending...",
+      successMsg: "Thank you! Your default mail client will open to finalize sending.",
+      validationError: "Please fill in all required fields with valid information."
+    },
+
+    // Footer
+    footer: {
+      copyright: "© 2026 Arnau Domenech Blanquer. All rights reserved.",
+      builtWith: "Built with semantic HTML5, modern CSS3, Vanilla JS & Three.js",
+      backToTop: "Back to top"
+    }
+  },
+
+  va: {
+    // Document metadata
+    meta: {
+      title: "Arnau Domenech Blanquer — Desenvolupador Web · Frontend · CI/CD",
+      description: "Portfolio professional de Arnau Domenech Blanquer. Desenvolupament web modern, arquitectures reactives, optimització de rendiment i automatització de desplegaments."
+    },
+
+    // Navigation
+    nav: {
+      home: "Inici",
+      about: "Sobre mi",
+      projects: "Projectes",
+      skills: "Habilitats",
+      process: "Metodologia",
+      contact: "Contacte",
+      themeLight: "Mode Dia",
+      themeDark: "Mode Nit",
+      menuOpen: "Obrir menú de navegació",
+      menuClose: "Tancar menú",
+      availableStatus: "Disponible per a projectes"
+    },
+
+    // Hero Section
+    hero: {
+      greeting: "Hola, sóc Arnau Domenech",
+      role: "Desenvolupador Web · Automatització · CI/CD",
+      headlinePrefix: "Construïsc experiències web ",
+      headlineHighlight: "ràpides, robustes",
+      headlineSuffix: " i orientades al rendiment.",
+      description: "Especialitzat en enginyeria frontend, interfícies reactives i sistemes d'integració contínua. Combine codi net amb arquitectures escalables que resolen problemes reals.",
+      ctaProjects: "Veure projectes",
+      ctaContact: "Contactar",
+      ctaLinkedIn: "LinkedIn",
+      metrics: {
+        yearsLabel: "Anys d'experiència",
+        automationLabel: "Automatitzacions actives",
+        perfLabel: "Rendiment Lighthouse",
+        uptimeLabel: "Disponibilitat de servicis"
+      }
+    },
+
+    // About Section
+    about: {
+      tag: "Sobre mi",
+      title: "Transformant idees complexes en interfícies netes i arquitectures predictibles.",
+      lead: "Sóc desenvolupador web enfocat en la intersecció entre disseny d'interacció, arquitectura frontend i automatització de processos.",
+      p1: "El meu enfocament de treball es basa en principis d'enginyeria de programari sòlids: codi modular, tipat estricte, accessibilitat (WCAG) i optimització de càrrega sense dependències supèrflues.",
+      p2: "M'apassiona crear productes digitals on cada interacció siga fluida i cada flux de desplegament estiga protegit per proves contínues i validacions rigoroses.",
+      architectureTitle: "Arquitectura de Desplegament: Disparador & Executor",
+      architectureDesc: "Implemente fluxos de treball basats en esdeveniments reactius on disparadors (webhooks, git push, cron) envien payloads a servicis executors idempotents que garantixen entregues segures i sense fallades.",
+      pillars: {
+        cleanCodeTitle: "Codi Net & Semàntic",
+        cleanCodeDesc: "Estructures HTML5 natives, CSS modern sense bloat i JavaScript/TypeScript estructurat.",
+        perfTitle: "Alt Rendiment",
+        perfDesc: "Càrregues instantànies, minimització de layouts forçats i gràfics WebGL lleugers.",
+        automationTitle: "Integració Contínua (CI/CD)",
+        automationDesc: "Pipelines automatitzats de proves, linters i desplegaments automàtics.",
+        uxTitle: "Enfocament en Accessibilitat (a11y)",
+        uxDesc: "Navegació per teclat completa, contrastos verificats i semàntica inclusiva."
+      }
+    },
+
+    // Projects Section
+    projects: {
+      tag: "Projectes",
+      title: "Solucions reals en producció",
+      subtitle: "Una selecció de projectes destacats on disseny, codi i automatització treballen junts.",
+      filters: {
+        all: "Tots",
+        webapps: "Web Apps",
+        automation: "Sistemes & CI/CD",
+        graphics: "3D & Interfícies"
+      },
+      viewLive: "Veure demo en viu",
+      viewCode: "Veure codi en GitHub",
+      roleLabel: "Rol:",
+      impactLabel: "Resultat:",
+      items: [
+        {
+          id: "portfolio",
+          category: "webapps",
+          badge: "Web App en Viu",
+          year: "2026",
+          title: "Portfolio Professional & Pipeline CI/CD",
+          description: "Lloc web professional amb arquitectura frontend moderna, automatització CI/CD amb GitHub Actions, validació de qualitat i disseny interactiu accessible.",
+          role: "Desenvolupament Frontend, Arquitectura CI/CD i Qualitat",
+          impact: "100% en accessibilitat i SEO, 4 comprovacions de validació contínua i desplegament automàtic en GitHub Pages.",
+          tags: ["HTML5", "CSS3", "JavaScript", "GitHub Actions", "Lighthouse"],
+          liveUrl: "https://arnaudaw.github.io/portfolio/",
+          githubUrl: "https://github.com/ArnauDAW/portfolio"
+        },
+        {
+          id: "telemetry",
+          category: "graphics",
+          badge: "Data Visualization",
+          year: "2024",
+          title: "Panell de Mètriques & Telemetria 3D",
+          description: "Sistema visual de monitorització en temps real amb renderitzat accelerat per maquinari mitjançant WebGL/Three.js. Dissenyat específicament per a executar-se de manera fluida fins i tot en dispositius de recursos limitats.",
+          role: "Enginyeria Gràfica i Frontend",
+          impact: "60 FPS estables amb baix consum de memòria i pausat dinàmic de renderitzat.",
+          tags: ["Three.js", "WebGL", "JavaScript ES6+", "Performance", "CSS Grid"],
+          liveUrl: "#",
+          githubUrl: "https://github.com/ArnauDAW/portfolio"
+        },
+        {
+          id: "pipeline",
+          category: "automation",
+          badge: "DevOps & CI/CD",
+          year: "2026",
+          title: "Pipeline CI/CD: Disparador & Executor",
+          description: "Arquitectura orientada a esdeveniments per a integració i desplegament continu. Un sistema de tret per webhooks que processa payloads JSON i executa compilacions, proves automatitzades i desplegaments idempotents.",
+          role: "Arquitectura d'Automatització i CI/CD",
+          impact: "Validació automàtica de qualitat (HTML/CSS/JS) i entrega contínua sense interrupcions.",
+          tags: ["GitHub Actions", "CI/CD", "Webhooks", "JSON Payloads", "Linux"],
+          liveUrl: "#proceso",
+          githubUrl: "https://github.com/ArnauDAW/portfolio"
+        }
+      ]
+    },
+
+    // Skills Section
+    skills: {
+      tag: "Habilitats",
+      title: "Stack tècnic i competències",
+      subtitle: "Eines i tecnologies que utilitze per a construir solucions duradores i d'alta qualitat.",
+      categories: [
+        {
+          name: "Frontend & UI Engineering",
+          desc: "Desenvolupament d'interfícies reactives, modernes i d'alt rendiment.",
+          skills: ["HTML5 Semàntic", "CSS3 / Flexbox / Grid", "JavaScript (ES6+)", "TypeScript", "Angular", "Three.js / WebGL", "Responsive Web Design"]
+        },
+        {
+          name: "Arquitectura & Backend",
+          desc: "Estructuració de dades, lògica de negoci i comunicació de servicis.",
+          skills: ["Node.js", "RESTful APIs", "JSON Payloads", "Arquitectura Trigger/Executor", "Microservicis", "Clean Architecture"]
+        },
+        {
+          name: "Eines, Git & CI/CD",
+          desc: "Automatització de desplegaments, control de versions i entorns de desenvolupament.",
+          skills: ["Git & GitHub", "GitHub Actions", "Pipelines CI/CD", "Webhooks d'automatització", "Linux Shell / Bash", "npm / Node tooling"]
+        },
+        {
+          name: "Qualitat, SEO & Rendiment",
+          desc: "Garantia d'estàndards, accessibilitat i màxima velocitat de càrrega.",
+          skills: ["Web Performance (Core Web Vitals)", "Accessibilitat WCAG AA", "SEO Tècnic & Metadades", "html-validate / Linters", "Cross-browser Testing"]
+        }
+      ]
+    },
+
+    // Process Section
+    process: {
+      tag: "Metodologia",
+      title: "Un procés estructurat orientat a resultats",
+      subtitle: "Cada etapa està dissenyada per a minimitzar la fricció tècnica i maximitzar el valor del producte.",
+      steps: [
+        {
+          number: "01",
+          title: "Diagnòstic & Requisits",
+          desc: "Anàlisi del problema, definició de l'abast tècnic, selecció de l'stack òptim i establiment d'objectius de rendiment i accessibilitat."
+        },
+        {
+          number: "02",
+          title: "Disseny & Arquitectura",
+          desc: "Creació de l'estructura visual, fluxos d'usuari, disseny de contractes de dades (JSON) i definició de l'arquitectura de components."
+        },
+        {
+          number: "03",
+          title: "Desenvolupament & Proves",
+          desc: "Implementació amb codi net i tipat, proves unitàries i de validació automàtica en cada confirmació de codi."
+        },
+        {
+          number: "04",
+          title: "CI/CD & Optimització",
+          desc: "Desplegament automàtic mitjançant pipelines continus, auditories de Lighthouse, verificació d'accessibilitat i monitorització activa."
+        }
+      ]
+    },
+
+    // Metrics / Insights
+    insights: {
+      title: "Rendiment i fiabilitat mesurables",
+      stat1Number: "98%",
+      stat1Label: "Índex de qualitat i satisfacció",
+      stat2Number: "100%",
+      stat2Label: "Validació de codi en CI",
+      stat3Number: "< 1s",
+      stat3Label: "Temps de càrrega inicial",
+      stat4Number: "24/7",
+      stat4Label: "Disponibilitat en GitHub Pages"
+    },
+
+    // Contact Section
+    contact: {
+      tag: "Contacte",
+      title: "Tens un projecte en ment?",
+      subtitle: "Estic disponible per a col·laborar en projectes desafiadors, arquitectures web i desenvolupament frontend.",
+      emailLabel: "Correu electrònic:",
+      emailCopy: "Copiar correu",
+      emailCopied: "Copiat al porta-retalls!",
+      githubLabel: "Perfil de GitHub:",
+      githubView: "Visitar github.com/ArnauDAW",
+      linkedinLabel: "Perfil de LinkedIn:",
+      linkedinView: "Visitar linkedin.com/in/arnau-domenech",
+      formTitle: "Envia'm un missatge",
+      nameLabel: "El teu nom",
+      namePlaceholder: "Ex: Marc Pérez",
+      emailInputLabel: "El teu correu electrònic",
+      emailPlaceholder: "nom@exemple.com",
+      messageLabel: "Missatge",
+      messagePlaceholder: "Conta'm els detalls del teu projecte o idea...",
+      submitBtn: "Enviar missatge",
+      submittingBtn: "Enviant...",
+      successMsg: "Gràcies! S'obrirà el teu client de correu per a completar l'enviament.",
+      validationError: "Per favor, completa tots els camps requerits amb dades vàlides."
+    },
+
+    // Footer
+    footer: {
+      copyright: "© 2026 Arnau Domenech Blanquer. Tots els drets reservats.",
+      builtWith: "Construït amb HTML5 semàntic, CSS3 modern, Vanilla JS & Three.js",
+      backToTop: "Tornar a dalt"
+    }
+  }
+};
+
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = translations;
+}
+

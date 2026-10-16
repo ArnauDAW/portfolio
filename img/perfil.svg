@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" aria-label="Avatar de Arnau Domenech Blanquer">
+  <defs>
+    <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0038b8"/>
+      <stop offset="50%" stop-color="#0055d4"/>
+      <stop offset="100%" stop-color="#070b14"/>
+    </linearGradient>
+    <linearGradient id="badgeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background circle with gradient -->
+  <rect width="400" height="400" rx="40" fill="url(#avatarGrad)"/>
+  
+  <!-- Subtle border -->
+  <rect x="4" y="4" width="392" height="392" rx="36" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+
+  <!-- Code bracket decoration in background -->
+  <g opacity="0.1" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M90 140 L40 200 L90 260" />
+    <path d="M310 140 L360 200 L310 260" />
+    <line x1="220" y1="130" x2="180" y2="270" />
+  </g>
+
+  <!-- Stylized avatar silhouette / developer figure -->
+  <g filter="url(#shadow)">
+    <!-- Shoulders / Torso -->
+    <path d="M110 330 C110 260, 150 240, 200 240 C250 240, 290 260, 290 330 Z" fill="#ffffff" opacity="0.95"/>
+    <!-- Head -->
+    <circle cx="200" cy="170" r="58" fill="#ffffff" opacity="0.95"/>
+    <!-- Code Accent glasses / eyes -->
+    <g stroke="#0038b8" stroke-width="4" stroke-linecap="round" fill="none">
+      <rect x="165" y="156" width="28" height="20" rx="4" fill="rgba(0,56,184,0.1)"/>
+      <rect x="207" y="156" width="28" height="20" rx="4" fill="rgba(0,56,184,0.1)"/>
+      <line x1="193" y1="166" x2="207" y2="166"/>
+      <!-- Friendly smile -->
+      <path d="M185 198 Q200 210 215 198" stroke-width="3"/>
+    </g>
+  </g>
+
+  <!-- Monogram Badge -->
+  <g transform="translate(270, 270)">
+    <circle cx="36" cy="36" r="36" fill="url(#badgeGrad)" filter="url(#shadow)"/>
+    <text x="36" y="43" font-family="'JetBrains Mono', monospace" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle">&lt;ADB&gt;</text>
+  </g>
+</svg>
+
