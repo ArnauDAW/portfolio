@@ -82,17 +82,17 @@ const translations = {
       impactLabel: "Resultado:",
       items: [
         {
-          id: "avisa",
+          id: "portfolio",
           category: "webapps",
           badge: "Web App en Vivo",
-          year: "2025",
-          title: "AVISA — Gestión de Incidencias",
-          description: "Plataforma web integral para la comunicación, seguimiento y resolución ágil de avisos e incidencias. Diseñada con arquitectura modular, retroalimentación en tiempo real y accesibilidad.",
-          role: "Desarrollo Frontend, UX/UI y Despliegue",
-          impact: "Interfaz ágil, accesible y completamente funcional desplegada en producción.",
-          tags: ["Angular", "TypeScript", "UX/UI", "REST API", "Responsive"],
-          liveUrl: "https://arnaudaw.github.io/AVISA-objectiu/",
-          githubUrl: "https://github.com/ArnauDAW/AVISA"
+          year: "2026",
+          title: "Portfolio Profesional & Pipeline CI/CD",
+          description: "Sitio web profesional con arquitectura frontend moderna, automatización CI/CD con GitHub Actions, validación de calidad y diseño interactivo accesible.",
+          role: "Desarrollo Frontend, Arquitectura CI/CD y Calidad",
+          impact: "100% en accesibilidad y SEO, 4 checks de validación continua y despliegue automático en GitHub Pages.",
+          tags: ["HTML5", "CSS3", "JavaScript", "GitHub Actions", "Lighthouse"],
+          liveUrl: "https://arnaudaw.github.io/portfolio/",
+          githubUrl: "https://github.com/ArnauDAW/portfolio"
         },
         {
           id: "telemetry",
@@ -306,17 +306,17 @@ const translations = {
       impactLabel: "Result:",
       items: [
         {
-          id: "avisa",
+          id: "portfolio",
           category: "webapps",
           badge: "Live Web App",
-          year: "2025",
-          title: "AVISA — Issue & Notice Management",
-          description: "Comprehensive web platform for real-time reporting, tracking, and resolution of issues and notices. Engineered with a modular architecture, instant user feedback, and accessibility.",
-          role: "Frontend Development, UX/UI & Deployment",
-          impact: "Fast, accessible, and production-ready application deployed on the web.",
-          tags: ["Angular", "TypeScript", "UX/UI", "REST API", "Responsive"],
-          liveUrl: "https://arnaudaw.github.io/AVISA-objectiu/",
-          githubUrl: "https://github.com/ArnauDAW/AVISA"
+          year: "2026",
+          title: "Professional Portfolio & CI/CD Pipeline",
+          description: "Modern web portfolio engineered with responsive frontend architecture, continuous integration with GitHub Actions, quality budgets, and accessibility.",
+          role: "Frontend Development, CI/CD Architecture & Quality",
+          impact: "100% in accessibility and SEO, 4 continuous validation checks, and automatic GitHub Pages deployment.",
+          tags: ["HTML5", "CSS3", "JavaScript", "GitHub Actions", "Lighthouse"],
+          liveUrl: "https://arnaudaw.github.io/portfolio/",
+          githubUrl: "https://github.com/ArnauDAW/portfolio"
         },
         {
           id: "telemetry",
@@ -530,17 +530,17 @@ const translations = {
       impactLabel: "Resultat:",
       items: [
         {
-          id: "avisa",
+          id: "portfolio",
           category: "webapps",
           badge: "Web App en Viu",
-          year: "2025",
-          title: "AVISA — Gestió d'Incidències",
-          description: "Plataforma web integral per a la comunicació, seguiment i resolució àgil d'avisos i incidències. Dissenyada amb arquitectura modular, retroalimentació en temps real i accessibilitat.",
-          role: "Desenvolupament Frontend, UX/UI i Desplegament",
-          impact: "Interfície àgil, accessible i completament funcional desplegada en producció.",
-          tags: ["Angular", "TypeScript", "UX/UI", "REST API", "Responsive"],
-          liveUrl: "https://arnaudaw.github.io/AVISA-objectiu/",
-          githubUrl: "https://github.com/ArnauDAW/AVISA"
+          year: "2026",
+          title: "Portfolio Professional & Pipeline CI/CD",
+          description: "Lloc web professional amb arquitectura frontend moderna, automatització CI/CD amb GitHub Actions, validació de qualitat i disseny interactiu accessible.",
+          role: "Desenvolupament Frontend, Arquitectura CI/CD i Qualitat",
+          impact: "100% en accessibilitat i SEO, 4 comprovacions de validació contínua i desplegament automàtic en GitHub Pages.",
+          tags: ["HTML5", "CSS3", "JavaScript", "GitHub Actions", "Lighthouse"],
+          liveUrl: "https://arnaudaw.github.io/portfolio/",
+          githubUrl: "https://github.com/ArnauDAW/portfolio"
         },
         {
           id: "telemetry",
